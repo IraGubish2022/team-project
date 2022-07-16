@@ -1,0 +1,11 @@
+:root {
+    --main-color: #000000;
+    --secondary-color: #ffffffff;
+}
+body {
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 1.5;
+}
