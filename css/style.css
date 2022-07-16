@@ -1,3 +1,13 @@
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 :root {
     --main-color: #000000;
     --secondary-color: #ffffffff;
@@ -8,4 +18,67 @@ body {
     font-size: 16px;
     color: var(--main-color);
     line-height: 1.5;
+}
+
+.header {
+    background: url(../img/img1.jpg);
+    max-width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 322px 0;
+    position: relative;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container,
+.navigation,
+.list-links {
+    display: flex;
+}
+
+.navigation {
+    align-items: center;
+}
+.header-container {
+    position: absolute;
+    top: 57px;
+    align-items: center;
+}
+
+.contact {
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.list-item + .list-item {
+    margin-left: 40px;
+}
+
+.list-link {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 0;
+}
+
+.contact-link {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 17px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 0;
 }
